@@ -2,58 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Knights Wireless</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      color: white;
-      background: url('IMG_6418.png') no-repeat center top;
+      background-image: url('IMG_6418.png');
       background-size: cover;
-      background-color: #000;
+      background-position: center;
+      color: white;
       text-align: center;
-      padding: 60px 20px;
+      padding: 50px 20px;
     }
 
     h1 {
-      font-size: 36px;
-      margin: 20px 0;
+      font-size: 40px;
+      margin-bottom: 20px;
     }
 
     p {
       font-size: 18px;
       max-width: 600px;
-      margin: 10px auto 30px;
-      line-height: 1.5;
+      margin: 0 auto 40px;
     }
 
     .button {
-      display: inline-block;
-      padding: 15px 30px;
-      margin: 10px;
-      border: 2px solid #ccc;
+      display: block;
+      width: 80%;
+      max-width: 300px;
+      margin: 10px auto;
+      padding: 15px;
+      border: 2px solid white;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    .button:hover {
-      background: white;
-      color: black;
+      font-weight: bold;
+      border-radius: 10px;
     }
 
     .coming-soon {
       font-weight: bold;
-      margin-top: 60px;
       font-size: 20px;
+      margin-top: 50px;
     }
 
-    .coming-soon-sub {
-      font-weight: normal;
-      font-size: 16px;
-      margin-top: 10px;
+    @media (min-width: 600px) {
+      .button {
+        width: 300px;
+      }
     }
   </style>
 </head>
@@ -61,14 +57,12 @@
   <h1>Knights Wireless</h1>
   <p>A private wireless company built for privacy, freedom, and protection — cheap and affordable for everyone.</p>
 
-  <a href="https://your-waitlist-link.com" class="button">Join Waitlist</a>
-  <a href="https://your-learn-more-link.com" class="button">Learn More</a>
-  <a href="https://malusayf.igenius.biz" class="button">Get Started</a>
+  <a class="button" href="https://your-waitlist-link.com" target="_blank">Join Waitlist</a>
+  <a class="button" href="https://your-learn-more-link.com" target="_blank">Learn More</a>
+  <a class="button" href="https://malusayf.igenius.biz" target="_blank">Get Started</a>
 
-  <div class="coming-soon">COMING SOON:</div>
-  <div class="coming-soon-sub">
-    Knights Wireless is getting ready to launch.<br>
-    Stay tuned for updates!
+  <div class="coming-soon">
+    <p>COMING SOON:<br>Knights Wireless is getting ready to launch.<br>Stay tuned for updates!</p>
   </div>
 </body>
 </html>
