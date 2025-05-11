@@ -5,24 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Knights Wireless</title>
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      color: white;
+      box-sizing: border-box;
     }
 
     body {
-      background: url('2452574F-8826-4703-AB3B-7EB742D57630.png') no-repeat center center fixed;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: url("2452574F-8826-4703-AB3B-7EB742D57630.png") no-repeat center center fixed;
       background-size: cover;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: 100vh;
-      box-sizing: border-box;
-      padding: 30px;
+      padding: 50px 20px;
     }
 
     h1 {
@@ -33,7 +28,8 @@
     p {
       font-size: 18px;
       max-width: 600px;
-      margin: 0 auto 30px;
+      margin: 0 auto 40px auto;
+      line-height: 1.5;
     }
 
     .button {
@@ -43,37 +39,39 @@
       border: 2px solid white;
       color: white;
       text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
     }
 
-    .button.disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-      pointer-events: none;
+    .button:hover {
+      background: rgba(255, 255, 255, 0.1);
     }
 
     .coming-soon {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 40px;
+      margin-top: 60px;
+      font-size: 18px;
     }
 
-    .coming-soon-text {
-      font-size: 16px;
-      margin-top: 10px;
+    .coming-soon strong {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
   <h1>Knights Wireless</h1>
   <p>A private wireless company built for privacy, freedom, and protection — cheap and affordable for everyone.</p>
+
   <div>
-    <a class="button disabled" href="#">Join Waitlist</a>
-    <a class="button disabled" href="#">Learn More</a>
-    <a class="button disabled" href="#">Get Started</a>
+    <a class="button" href="#">Join Waitlist</a>
+    <a class="button" href="#">Learn More</a>
+    <a class="button" href="#">Get Started</a>
   </div>
-  <div class="coming-soon">COMING SOON:</div>
-  <div class="coming-soon-text">Knights Wireless is getting ready to launch. Stay tuned for updates!</div>
+
+  <div class="coming-soon">
+    <strong>COMING SOON:</strong>
+    Knights Wireless is getting ready to launch. Stay tuned for updates!
+  </div>
 </body>
 </html>
