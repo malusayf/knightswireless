@@ -10,23 +10,23 @@
       font-family: Arial, sans-serif;
       background-color: #000;
       color: white;
-      background-image: radial-gradient(#444 1px, transparent 1px),
-                        radial-gradient(#444 1px, transparent 1px);
-      background-size: 20px 20px;
-      background-position: 0 0, 10px 10px;
+      background-image: url('https://raw.githubusercontent.com/malusayf/knightswireless/main/spartan-bg.png'); /* Upload this to GitHub and update the link */
+      background-size: cover;
+      background-position: center;
       text-align: center;
-      padding: 30px;
+      padding: 40px 20px;
     }
 
     h1 {
-      font-size: 36px;
-      margin: 20px 0;
+      font-size: 42px;
+      margin: 30px 0 10px;
     }
 
     p {
       font-size: 18px;
       max-width: 600px;
-      margin: 10px auto 30px;
+      margin: 10px auto 40px;
+      line-height: 1.6;
     }
 
     .button {
@@ -35,40 +35,52 @@
       margin: 10px;
       border: 2px solid #ccc;
       color: white;
-      background-color: transparent;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 10px;
-      transition: background-color 0.3s ease;
+      border-radius: 8px;
+      transition: background 0.3s;
     }
 
     .button:hover {
-      background-color: #444;
+      background: rgba(255, 255, 255, 0.1);
     }
 
     .coming-soon {
-      font-weight: bold;
-      margin-top: 40px;
+      margin-top: 50px;
+      font-size: 18px;
+    }
+
+    .coming-soon strong {
+      font-size: 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .button {
+        width: 80%;
+        max-width: 300px;
+        display: block;
+        margin: 15px auto;
+      }
     }
   </style>
 </head>
 <body>
-
   <h1>Knights Wireless</h1>
-  <p>
-    A private wireless company built for privacy, freedom, and protection — cheap and affordable for everyone.
-  </p>
+  <p>A private wireless company built for privacy, freedom, and protection — cheap and affordable for everyone.</p>
 
   <a href="#" class="button">Join Waitlist</a>
   <a href="#" class="button">Learn More</a>
-  <a href="#" class="button">Get Started</a>
+  <a href="http://malusayf.igenius.biz" class="button">Get Started</a>
 
-  <p class="coming-soon">
-    COMING SOON:<br>
-    Knights Wireless is getting ready to launch.<br>
+  <div class="coming-soon">
+    <strong>COMING SOON:</strong><br />
+    Knights Wireless is getting ready to launch.<br />
     Stay tuned for updates!
-  </p>
-
+  </div>
 </body>
 </html>
 
