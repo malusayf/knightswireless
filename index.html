@@ -2,11 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Knights Wireless</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.1em;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 3em;
+    }
+
+    .buttons a {
+      background-color: #111;
+      color: #fff;
+      padding: 12px 24px;
+      border: 1px solid #555;
+      border-radius: 6px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .buttons a:hover {
+      background-color: #333;
+    }
+
+    #coming-soon {
+      margin-top: 4em;
+      font-size: 1.2em;
+      color: #aaa;
+    }
+  </style>
 </head>
-<body style="background-color:#000; color:#fff; font-family:sans-serif; text-align:center; padding:50px;">
+<body>
+
   <h1>Knights Wireless</h1>
   <p>A private wireless company built for privacy, freedom, and protection — cheap and affordable for everyone.</p>
+
+  <div class="buttons">
+    <a href="mailto:malusayf@gmail.com?subject=Join%20Knights%20Wireless%20Waitlist">Join Waitlist</a>
+    <a href="#coming-soon">Learn More</a>
+    <a href="#coming-soon">Get Started</a>
+  </div>
+
+  <div id="coming-soon">
+    <strong>Coming Soon:</strong><br>
+    Knights Wireless is getting ready to launch. Stay tuned for updates!
+  </div>
+
 </body>
 </html>
